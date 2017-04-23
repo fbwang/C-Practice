@@ -10,6 +10,29 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
+    int ch;
+    int line;
+    int at_beginning;
+    
+    line = 0;
+    at_beginning = 1;
+    /*
+     ** Read charactor and handle them one by one
+     */
+    
+    while ((ch = getchar()) != EOF) {
+        if (at_beginning == 1) {
+            at_beginning = 0;
+            line += 1;
+            printf("%d:\t", line);
+        }
+        
+        putchar(ch);
+        if (ch == '\n') {
+            at_beginning = 1;
+        }
+
+    }
+//    printf("Hello, World!\n");
     return 0;
 }
