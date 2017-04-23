@@ -7,20 +7,22 @@
 //
 
 #include <stdio.h>
+#include "strlen.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int ch;
+    /*int ch;
     int line;
     int at_beginning;
     
     line = 0;
     at_beginning = 1;
+     */
     /*
      ** Read charactor and handle them one by one
      */
     
-    while ((ch = getchar()) != EOF) {
+   /* while ((ch = getchar()) != EOF) {
         if (at_beginning == 1) {
             at_beginning = 0;
             line += 1;
@@ -32,7 +34,9 @@ int main(int argc, const char * argv[]) {
             at_beginning = 1;
         }
 
-    }
-//    printf("Hello, World!\n");
+    }*/
+    char ch[]= "test";
+    int chlen = len(ch);
+    printf("%d\n",chlen);
     return 0;
 }
